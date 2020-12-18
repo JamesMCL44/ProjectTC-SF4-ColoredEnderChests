@@ -39,8 +39,8 @@ public class ColoredEnderChests extends JavaPlugin implements SlimefunAddon {
             }
         }
 
-        Research enderChestsResearch = new Research(new NamespacedKey(this, "colored_enderchests"), 2610, "Colored Ender Chests", 20);
-        Research bigEnderChestsResearch = new Research(new NamespacedKey(this, "big_colored_enderchests"), 2611, "Big Colored Ender Chests", 30);
+        Research enderChestsResearch = new Research(new NamespacedKey(this, "colored_enderchests"), 2610, "色繫終界箱", 20);
+        Research bigEnderChestsResearch = new Research(new NamespacedKey(this, "big_colored_enderchests"), 2611, "大型色繫終界箱", 30);
 
         enderChestsResearch.register();
         bigEnderChestsResearch.register();
@@ -62,7 +62,7 @@ public class ColoredEnderChests extends JavaPlugin implements SlimefunAddon {
         colors.put(14, "&4Red");
         colors.put(15, "&8Black");
 
-        category = new Category(new NamespacedKey(this, "colored_enderchests"), new CustomItem(Material.ENDER_CHEST, "&5Colored Ender Chests"), 2);
+        category = new Category(new NamespacedKey(this, "colored_enderchests"), new CustomItem(Material.ENDER_CHEST, "&5色繫終界箱"), 2);
 
         for (int c1 = 0; c1 < 16; c1++) {
             for (int c2 = 0; c2 < 16; c2++) {
