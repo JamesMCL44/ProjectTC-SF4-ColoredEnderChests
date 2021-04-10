@@ -45,6 +45,23 @@ public class ColoredEnderChests extends JavaPlugin implements SlimefunAddon {
         enderChestsResearch.register();
         bigEnderChestsResearch.register();
 
+        colors.put(0, "&r白色");
+        colors.put(1, "&6橙色");
+        colors.put(2, "&d紫色");
+        colors.put(3, "&b天藍色");
+        colors.put(4, "&e黃色");
+        colors.put(5, "&a綠色");
+        colors.put(6, "&d粉紅色");
+        colors.put(7, "&8深灰色");
+        colors.put(8, "&7灰色");
+        colors.put(9, "&3湖藍色");
+        colors.put(10, "&5紫色");
+        colors.put(11, "&9藍色");
+        colors.put(12, "&6金色");
+        colors.put(13, "&2深綠色");
+        colors.put(14, "&4深紅色");
+        colors.put(15, "&8黑色");
+        /*
         colors.put(0, "&rWhite");
         colors.put(1, "&6Orange");
         colors.put(2, "&dMagenta");
@@ -61,6 +78,8 @@ public class ColoredEnderChests extends JavaPlugin implements SlimefunAddon {
         colors.put(13, "&2Green");
         colors.put(14, "&4Red");
         colors.put(15, "&8Black");
+        */
+
 
         category = new Category(new NamespacedKey(this, "colored_enderchests"), new CustomItem(Material.ENDER_CHEST, "&5色繫終界箱"), 2);
 
