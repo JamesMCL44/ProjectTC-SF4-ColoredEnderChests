@@ -10,15 +10,10 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
 
-// <<<<<<< HEAD
-// import io.github.thebusybiscuit.slimefun4.core.handlers.BlockPlaceHandler;
-// import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-// =======
 import io.github.thebusybiscuit.slimefun4.core.handlers.BlockBreakHandler;
 import io.github.thebusybiscuit.slimefun4.core.handlers.BlockPlaceHandler;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.implementation.handlers.SimpleBlockBreakHandler;
-// >>>>>>> upstream/master
 import io.github.thebusybiscuit.slimefun4.utils.ColoredMaterial;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
@@ -92,8 +87,6 @@ public class ColoredEnderChest extends SlimefunItem {
         addItemHandler(onBlockPlace(c1, c2, c3));
 
         new BlockMenuPreset(getId(), "&eEnder Chest", true) {
-// >>>>>>> upstream/master
-
             @Override
             public void init() {
                 setSize(size);
