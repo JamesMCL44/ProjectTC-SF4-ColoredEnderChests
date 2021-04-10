@@ -60,14 +60,11 @@ final class ColorIndicator {
     private static Location translocate(Location l, int direction, int yaw) {
         if (yaw == 45) { // 0
             return l.add(0.275 * direction, 0, 0);
-        }
-        else if (yaw == 225) { // 180
+        } else if (yaw == 225) { // 180
             return l.add(-0.275 * direction, 0, 0);
-        }
-        else if (yaw == -45) { // -90
+        } else if (yaw == -45) { // -90
             return l.add(0, 0, -0.275 * direction);
-        }
-        else { // 90
+        } else { // 90
             return l.add(0, 0, 0.275 * direction);
         }
     }

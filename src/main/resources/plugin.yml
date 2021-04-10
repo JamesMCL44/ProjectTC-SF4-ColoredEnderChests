@@ -6,5 +6,5 @@ website: https://github.com/TheBusyBiscuit/ColoredEnderChests
 main: io.github.thebusybiscuit.coloredenderchests.ColoredEnderChests
 api-version: 1.13
 
-depend:
+depend: 
 - Slimefun
