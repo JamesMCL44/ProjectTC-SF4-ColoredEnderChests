@@ -86,20 +86,32 @@ public class ColoredEnderChests extends JavaPlugin implements SlimefunAddon {
         for (int c1 = 0; c1 < 16; c1++) {
             for (int c2 = 0; c2 < 16; c2++) {
                 for (int c3 = 0; c3 < 16; c3++) {
-                    registerEnderChest(enderChestsResearch, bigEnderChestsResearch, c1, c2, c3);
+                    registerEnderChest(enderChestsResearch, c1, c2, c3);
+                }
+            }
+        }
+
+        category = new Category(new NamespacedKey(this, "big_colored_enderchests"), new CustomItem(Material.ENDER_CHEST, "&5大型色繫終界箱"), 2);
+
+        for (int c1 = 0; c1 < 16; c1++) {
+            for (int c2 = 0; c2 < 16; c2++) {
+                for (int c3 = 0; c3 < 16; c3++) {
+                    registerBigEnderChest(bigEnderChestsResearch, c1, c2, c3);
                 }
             }
         }
 
     }
 
-    private void registerEnderChest(Research smallResearch, Research bigResearch, final int c1, final int c2, final int c3) {
+    private void registerEnderChest(Research smallResearch, final int c1, final int c2, final int c3) {
         if (cfg.getBoolean("small_chests")) {
             ColoredEnderChest item = new ColoredEnderChest(this, 27, c1, c2, c3);
             item.register(this);
             smallResearch.addItems(item);
         }
+    }
 
+    private void registerBigEnderChest(Research bigResearch, final int c1, final int c2, final int c3) {
         if (cfg.getBoolean("big_chests")) {
             ColoredEnderChest item = new ColoredEnderChest(this, 54, c1, c2, c3);
             item.register(this);
